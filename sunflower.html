@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunflower</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f6e58d;
+      font-family: "Georgia", serif;
+    }
+
+    .envelope {
+      position: relative;
+      width: 420px;
+      height: 280px;
+      background: #f9d71c;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    /* flap */
+    .flap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: #f1c40f;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      transform-origin: top;
+      transition: transform 0.8s ease;
+      z-index: 2;
+    }
+
+    /* sunflower seal */
+    .seal {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #f39c12;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 3;
+    }
+    .seal::before {
+      content: "🌻";
+      font-size: 32px;
+    }
+
+    /* card */
+    .card {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(100%);
+      width: 92%;
+      height: 92%;
+      background: #fffbe7;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.8s ease;
+      z-index: 1;
+      overflow-y: auto;
+      line-height: 1.5;
+      font-size: 14px;
+
+      /* sunflower background */
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><rect width='120' height='120' fill='%23fffbe7'/><g transform='translate(60 60)'><circle r='20' fill='%235a3a17'/><g fill='%23ffd34d' stroke='%23b48705' stroke-width='1'><ellipse rx='10' ry='26' transform='rotate(0)'/><ellipse rx='10' ry='26' transform='rotate(22.5)'/><ellipse rx='10' ry='26' transform='rotate(45)'/><ellipse rx='10' ry='26' transform='rotate(67.5)'/><ellipse rx='10' ry='26' transform='rotate(90)'/><ellipse rx='10' ry='26' transform='rotate(112.5)'/><ellipse rx='10' ry='26' transform='rotate(135)'/><ellipse rx='10' ry='26' transform='rotate(157.5)'/></g></g></svg>");
+      background-size: 120px 120px;
+    }
+
+    /* when open */
+    .envelope.open .flap {
+      transform: rotateX(180deg);
+    }
+    .envelope.open .card {
+      transform: translateX(-50%) translateY(0%);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      background: #f39c12;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="envelope" id="envelope">
+    <div class="flap">
+      <div class="seal"></div>
+    </div>
+    <div class="card">
+      <h2>Hey My Sunflower 🌻</h2>
+      <p>
+        Hey My sunflower,
+
+this message is for u cause ur dada was worried and sad to see u so he thought writing his love for u 
+so brace yourself coz he is not gonna stop probably the charge might end in his bujji but the love he 
+has for you wont has the sun won't go down and as the water on earth wont dry up and as the starts on 
+the universe is countless u are the person who thought me what it is like to be felt special 
+u thought me many things and i'm grateful for you as well as u are the most precious person to him 
+since the first time ur dada met u after a long time and who knew that when we were young we would 
+end up getting obsessed with each other's touch and person's my younger version would be in shock 
+as well as he will be a little red too coz that little person had a little secret which he didn't tell
+it to anyone before but he had a small thing abt you idk whether to call it a crush or love but after 
+that day when we were at the ground and when i was wandering around u come up to me and ask me is anything
+wrong it felt good like someone noticed me when i was not doing well and that is the one thing which hasn't 
+changed and even now when i think abt it i giggle and after that day he always liked u like a good friend 
+it was fun back then when were talking and playing games and ya not that i'm proud of i was kinda jealous
+how roshan was comfortable with u talking coz i wasn't i was hesitating to talk to ppl and after that we 
+parted ways both of us not knowing that we would end up together and boom ther is that inauguration day 
+when we saw eachother's story and met tbh after seeing like 2-3 yrs ig u weren't changed ik i did call u 
+fat before but i didn't tell how cute u were back then and back then i like ur smile those puffy cheeks 
+which whould wiggle and i like how u chased me annoying u and my fav i like how u would turn red when 
+u are shy or angry u would look like an red ripened cherry which was blessed with rain i was an admier
+a secret admire even now ohh wait i got out of track i was gonna tell how special u make me feel 
+coming back to that , u might remember this or not idk but one night u replied to one of my story 
+asking if i was okay the story was a little depressing and i had posted it coz that day my parents 
+had an huge fight all my uncle and my aunt had to come to stop it and i couldn't take it anymore 
+that was the day when we got our sem 1 results i didn't knew at that time whether to be happy that
+i scored well or to be sad that how parents fought so i just came down sat on the edge of the road and cried 
+that was time i cried after yrs ig i had all the stored in me and it let out but after that i posted 
+and then later when replied it took me back to that young day when u asked me how i was at the playground
+it felt good my baby and from that day i got close to you and that closens grew into us becoming good frnds
+and then another boom the day when i  got obsessed with ur touch is the day when we all sat in the classroom 
+to watch sabbriena idk when u were at my arms it felt like i was having my babygurl with me close it felt like 
+home and after that is when my love ur dada got hit by the cupid's arrow which aimed rit into his heart that arrow 
+is u and still is the same place
+.
+.
+.
+.
+what i want to say my sunflower times might be difficult right now  but we cant be distancing eachother coz i believe
+it is not against eachother but us against the world and i wanna win this fight i wanna win this fight and claim u 
+for the rest of our life and it is possible if u belive in me and not to give up on me nor on urself  stay strong my
+love ur dada will get u from ur chaos....
+      </p>
+      <h3>I LOVE YOUU </h3>
+      <br>
+      <h3>MUUAHHHH</h3>
+    </div>
+  </div>
+
+  <button onclick="document.getElementById('envelope').classList.toggle('open')">Open / Close Envelope</button>
+
+</body>
+</html>
